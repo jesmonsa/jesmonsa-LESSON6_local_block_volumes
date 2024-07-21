@@ -159,7 +159,6 @@ resource "null_resource" "Webserver1_oci_iscsi_attach" {
     inline = ["sudo /bin/su -c \"rm -Rf /home/opc/iscsiattach.sh\""]
   }
 
-
   provisioner "file" {
     connection {
       type                = "ssh"
